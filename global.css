@@ -1,0 +1,43 @@
+:root {
+  /* fonts */
+  --font-ibm-plex-sans-thai: "IBM Plex Sans Thai";
+  --font-ibm-plex-sans-thai-looped: "IBM Plex Sans Thai Looped";
+
+  /* font sizes */
+  --font-size-7xs: 0.938rem;
+  --font-size-6xs: 1.125rem;
+  --font-size-5xs: 1.25rem;
+  --font-size-4xs: 1.375rem;
+  --font-size-3xs: 1.438rem;
+  --font-size-2xs: 1.563rem;
+  --font-size-xs: 1.625rem;
+  --font-size-sm: 1.75rem;
+  --font-size-base: 1.875rem;
+  --font-size-lg: 2.188rem;
+  --font-size-xl: 4.375rem;
+  --font-size-2xl: 5.625rem;
+  --font-size-3xl: 6.25rem;
+  --font-size-4xl: 10rem;
+
+  /* Colors */
+  --color-turquoise: #81cfb8;
+  --color-gray-100: #ecfbf7;
+  --color-gray-200: #ecfbf6;
+  --color-gray-300: #6d6d6d;
+  --color-gray-400: #1a2a54;
+  --color-teal-100: #029670;
+  --color-teal-200: #02966a;
+  --color-white: #fff;
+  --color-brown: #e76c6c;
+
+  /* Gaps */
+  --gap-md: 5px;
+
+  /* Paddings */
+  --padding-sm: 20px;
+  --padding-md: 30px;
+
+  /* border radiuses */
+  --br-sm: 50px;
+  --br-md: 100px;
+}

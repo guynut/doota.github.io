@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+    <title> Login </title>
+    <meta name="description" content="" />
+
+    <link rel="stylesheet" href="./global.css" />
+    <link rel="stylesheet" href="./login.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=IBM Plex Sans Thai:wght@400;500;600;700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=IBM Plex Sans Thai Looped:wght@400&display=swap"
+    />
+  </head>
+  <body>
+    <div class="login-nav">
+      <div class="login-grid">
+        <!-- Title doota -->
+        <div class="heading">
+          <h1>DOOTA</h1>
+          <h3>Ophthalmic diagnostic application</h3>
+          <h4>Let’s us take care your eyes</h4>
+        </div>
+
+        <div class="login-div">
+          <div class="login-BG">
+               <!-- user name -->
+              <div class="username">
+                <input type="text" required>
+                <span> </span>
+                <label> Username </label>
+              </div>
+              <!-- password -->
+              <div class="password">
+                <input type="password" required>
+                <span></span>
+                <label>Password</label>
+              </div>
+  
+              <!-- forget password -->
+              <div class="cr-forget">
+                <div class="forget-password-div" id="forgetpasswordContainer">
+                  Forget password?
+                </div>  
+              </div>
+              <!-- Login botton -->
+              <div class="btn-login-div">
+               <div class="btn-login" id="gotoprofile">
+                 <input type="submit" value="เข้าใช้งาน">
+               </div>
+              </div>
+          </div>
+          <!-- register -->
+          <div class="btn-register-div" id="btnRegisterContainer">
+            <div class="btn-register">
+              <input type="submit" value="ยังไม่มีบัญชีใช่ไหม?">
+            </div>
+          </div>
+        </div>
+        
+      </div>
+      
+
+      <!-- home Botton -->
+      <div class="btn-home-div1" id="homebottonconTainer">
+        <img class="home-1-icon1" alt="" src="public/home-1@2x.png" />
+        <div class="div4">กลับสู่หน้าหลัก</div>
+      </div>
+
+      <script>
+        var profile = document.getElementById("gotoprofile");
+        if (profile) {
+          profile.addEventListener("click", function (e) {
+            window.location.href = "./profile.html";
+          });
+        }
+      </script>
+      <script>
+        var forgetpasswordContainer = document.getElementById("forgetpasswordContainer");
+        if (forgetpasswordContainer) {
+          forgetpasswordContainer.addEventListener("click", function (e) {
+            window.location.href = "./index.html";
+          });
+        }
+      </script>
+      <script>
+        var homebottonconTainer = document.getElementById("homebottonconTainer")
+        if(homebottonconTainer){
+          homebottonconTainer.addEventListener("click" , function(e){
+            window.location.href="./index.html"
+          })
+        }
+      </script>
+      <script>
+        var btnRegisterContainer = document.getElementById("btnRegisterContainer");
+        if (btnRegisterContainer) {
+          btnRegisterContainer.addEventListener("click", function (e) {
+            window.location.href = "./register.html";
+          });
+        }
+      </script>
+
+    </div>
+  </body>
+</html>

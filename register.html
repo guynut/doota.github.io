@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+    <title></title>
+    <meta name="description" content="" />
+
+    <link rel="stylesheet" href="./global.css" />
+    <link rel="stylesheet" href="./register.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=IBM Plex Sans Thai:wght@400;500;600;700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=IBM Plex Sans Thai Looped:wght@400&display=swap"
+    />
+  </head>
+  <body>
+    <div class="register-nav">
+      <div class="register-grid">
+        <!-- Title doota -->
+        <div class="heading">
+          <h1>ยินดีต้อนรับ</h1>
+          <h3>Ophthalmic diagnostic application</h3>
+          <h4>Let’s us take care your eyes</h4>
+        </div>
+
+        <div class="login-div">
+          <div class="register-BG">
+               <!-- user name -->
+              <div class="username">
+                <input type="text" required>
+                <span> </span>
+                <label> Username </label>
+              </div>
+              <!-- email -->
+              <div class="text-inp">
+                <input type="text" required>
+                <span> </span>
+                <label> E-mail </label>
+              </div>
+              <!-- password -->
+              <div class="text-inp">
+                <input type="password" required>
+                <span></span>
+                <label>Password</label>
+              </div>
+              <!-- password -->
+              <div class="text-inp">
+                <input type="password" required>
+                <span></span>
+                <label>Re-password</label>
+              </div>
+  
+              <!-- Login botton -->
+              <div class="btn-login-div">
+               <div class="btn-login">
+                 <input type="submit" value="สมัคร">
+               </div>
+              </div>
+          </div>
+        </div>
+        
+      </div>
+      
+
+      <!-- home Botton -->
+      <div class="btn-home-div1" id="homebottonconTainer">
+        <img class="home-1-icon1" alt="" src="public/home-1@2x.png" />
+        <div class="div4">กลับสู่หน้าหลัก</div>
+      </div>
+
+      <script>
+        var forgetpasswordContainer = document.getElementById("forgetpasswordContainer");
+        if (forgetpasswordContainer) {
+          forgetpasswordContainer.addEventListener("click", function (e) {
+            window.location.href = "./index.html";
+          });
+        }
+      </script>
+      <script>
+        var homebottonconTainer = document.getElementById("homebottonconTainer")
+        if(homebottonconTainer){
+          homebottonconTainer.addEventListener("click" , function(e){
+            window.location.href="./index.html"
+          })
+        }
+      </script>
+      <script>
+        var btnRegisterContainer = document.getElementById("btnRegisterContainer");
+        if (btnRegisterContainer) {
+          btnRegisterContainer.addEventListener("click", function (e) {
+            window.location.href = "./register.html";
+          });
+        }
+      </script>
+
+    </div>
+  </body>
+</html>

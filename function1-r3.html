@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="initial-scale=1, width=device-width" />
+        <title>Eye Analysis</title>
+        <meta name="description" content="" />
+    
+        <link rel="stylesheet" href="./global.css" />
+        <link rel="stylesheet" href="./function1-r3.css" />
+    
+        <link
+          rel="stylesheet"
+          href="https://fonts.googleapis.com/css2?family=IBM Plex Sans Thai:wght@400;500;600;700&display=swap"
+        />
+        <link
+          rel="stylesheet"
+          href="https://fonts.googleapis.com/css2?family=IBM Plex Sans Thai Looped:wght@400&display=swap"
+        />
+        <link
+        rel="stylesheet"
+        href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      />
+      <link 
+        rel="stylesheet" 
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      />
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" charset="utf-8"></script>
+    </head>
+    <body>
+        <div class="page-bg">
+            <div class="sidebar">
+                <div class="close-btn">
+                    <h1>Doota</h1>
+                    <i class='bx bx-x' id="btn-close"></i>
+                </div>
+                <div class="menu">
+                    <div class="item"><a href="./index.html"><i class='bx bxs-home'></i>Home</a></div>
+                    <div class="item"><a href="./profile.html"><i class='bx bxs-user-circle'></i>Profile</a></div>
+                    <div class="item-drop">
+                        <p class="btn-func">
+                            <i class='bx bxs-grid-alt head-icon '></i>
+                            Function
+                            <i class='bx bxs-down-arrow second'></i>
+                        </p>
+                        <div class="sub-drop">
+                            <a href="./function1.html" class="sub-item">Eye Analysis</a>
+                            <a href="#" class="sub-item">xxxxxxxxxxxx</a>
+                            <a href="#" class="sub-item">xxxxxxxxxxxs</a>
+                        </div>
+                    </div>
+                    <div class="item"><a href="#"><i class='bx bx-info-circle'></i>About us</a></div>
+                    <div class="item-drop">
+                        <p class="btn-func">
+                            <i class='bx bxs-conversation head-icon'></i>
+                            Contact us
+                            <i class='bx bxs-down-arrow second'></i>
+                        </p>
+                        <div class="sub-drop">
+                            <a href="#" class="sub-item"><i class='bx bxl-facebook-circle sub-icon'></i>Facebook</a>
+                            <a href="#" class="sub-item">Line official</a>
+                            <a href="#" class="sub-item"><i class='bx bxs-envelope sub-icon'></i>E-mail</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="header">
+                <div class="header-grid">
+                    <div class="left-head-grid">
+                        <i class='bx bx-menu btn-menu' class="btn-menu" ></i>
+                        <h2 id="homebotton" > Doota</h2>
+                    </div>
+                    <div class="right-head">
+                        <div class="right-hand-grid">
+                            <span>username</span>
+                            <img src="public/imgprofile@2x.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Inside -->
+            <div class="container">
+                <div class="grid">
+
+                </div>
+            </div>
+        </div>
+        <!-- Script -->
+        <script>
+            const menubar = document.querySelector(".btn-menu");
+            const sidebar = document.querySelector(".sidebar");
+            const close = document.querySelector("#btn-close")
+            menubar.addEventListener('click',function(){
+                sidebar.classList.add("active");
+            });
+            close.addEventListener('click',function(){
+                sidebar.classList.remove("active");
+            });
+        </script>
+        <script type="text/javascript">
+        $(document).ready(function(){
+            $('.btn-func').click(function(){
+                $(this).next('.sub-drop').slideToggle();
+                $(this).find('.second').toggleClass('rotate')
+            });
+        });
+        </script>
+        <script>
+            var homebtn = document.getElementById("profilebtn")
+            if(homebtn){
+                homebtn.addEventListener("click" , function(e){
+                window.location.href="./profile.html"
+              })
+            }
+        </script>
+        <script>
+            var homebotton = document.getElementById("homebotton")
+            if(homebotton){
+                homebotton.addEventListener("click" , function(e){
+                window.location.href="./index.html"
+              })
+            }
+        </script>
+    </body>
+</html>
